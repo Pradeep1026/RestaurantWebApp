@@ -11,13 +11,6 @@
  
  <body>
      <div class="loader"><img src="images/loading.gif" alt="" /></div>
-        <!--
-        <section>
-         <div class="banner">
-         <img class="img-responsive logo1" src="images/logo.png"/>
-		<img src="images/lilli.jpg"  class="img-responsive" />
-	</div>
-      <!--banner section close-->  
       <?php 
   	   include('nav_bar.php'); 
   	 ?>

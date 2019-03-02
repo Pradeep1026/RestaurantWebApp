@@ -14,14 +14,7 @@ session_start();
 
 <body>
 	<div class="loader"><img src="images/loading.gif" alt="" /></div>
-        <!--
-        <section>
-         <div class="banner">
-         <img class="img-responsive logo1" src="images/logo.png"/>
-		 <img src="images/Dashboard.jpg"  class="img-responsive">
-		</div>
-        </section>
-		banner section-->
+  
 <?php 
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 include('db.php');

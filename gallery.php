@@ -9,14 +9,9 @@
   	 ?>  
  </head>
  <body>
+ <div id="fb-root"></div>
+	<script async defer src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.2&appId=2270128646589976&autoLogAppEvents=1"></script>
      <div class="loader"><img src="images/loading.gif" alt="" /></div>
-        <!--
-        <section>
-         <div class="banner">
-         <img class="img-responsive logo1" src="images/logo.png"/>
-		 <img src="images/gallery_top.jpg"  class="img-responsive">
-	</div>
-      <!--banner section close-->  
       <?php 
   	   include('nav_bar.php'); 
   	 ?>
@@ -26,6 +21,13 @@
 <section>
     
 <style type="text/css">
+.fb-div {
+	  border: 1px solid #dddfe2;
+    border-radius: 3px;
+		margin-top: 10px;
+    margin-bottom: 10px;
+		text-align: center;
+}
 .container {
   max-width: 1170px;
   width: 100%;
@@ -87,6 +89,12 @@
     </div>
     <div class="clearfix p20_0"></div>        
 </section> 
+
+<!-- facebook comment Box -->
+<div class="fb-div">
+	<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator"  data-numposts="5"></div>
+</div>
+<!-- Close facebook comment Box -->
 
 <?php 
 	include('footer.php');

@@ -18,6 +18,7 @@
     <li><a href="add_sub_menu_items.php"><h6>SUB MENU ITEMS</h6></a></li>
     <li><a href="up_gallery.php"><h6>GALLERY</h6></a></li>
     <li><a href="table_reservation_details.php"><h6>TABLE RESERVATION DETAILS</h6></a></li>
+    <li><a href="order_details.php"><h6>ORDER DETAILS</h6></a></li>
     <li><a href="contact_details.php"><h6>CONTACT DETAILS</h6></a></li>
     <li><a href="logout.php"><h6>LOGOUT</h6></a></li>
 </ul>

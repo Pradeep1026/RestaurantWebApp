@@ -11,6 +11,20 @@ $cust_id = $_SESSION['cust_id'];
      <?php 
   	   include('css_files.php'); 
   	 ?>  
+		 <style>
+		 	body {
+ 					background-image: url("./images/slider1.png");
+ 					background-color: #cccccc;
+					height: 500px;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					position: relative;
+			}
+			table {
+				background-color: #fff;
+			}
+		 </style>
  </head>
  <body>
       
@@ -20,7 +34,7 @@ $cust_id = $_SESSION['cust_id'];
          include('nav_bar.php'); 
          $totalPrice = $_SESSION['totalPrice'];
   	 ?>
-<form method="post" action="./Paytm_Kit/PaytmKit/pgRedirect.php" >
+<form method="post" action="./Paytm_Kit/PaytmKit/pgRedirect.php">
 		<table border="1" align = "center" style = "margin-top : 10px">
 			<tbody>
 				<tr>
@@ -33,7 +47,7 @@ $cust_id = $_SESSION['cust_id'];
 					<td><label>ORDER_ID::*</label></td>
 					<td><input id="ORDER_ID" tabindex="1" maxlength="20" size="20"
 						name="ORDER_ID" autocomplete="off"
-						value="<?php echo  "ORDS" . rand(10000,99999999)?>">
+						value="<?php  $ORDER_ID = "ORDS" . rand(10000,99999999); echo $ORDER_ID?>">
 					</td>
 				</tr>
 				<tr>

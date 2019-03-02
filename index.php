@@ -10,28 +10,6 @@
  
  
  <body>
-     <!-- <div class="loader"><img src="images/loading.gif" alt="" /></div>
-       
-        <section>
-        <div class="banner">
-            <img class="img-responsive logo" src="images/mainlogo.png"/>
-            <div id="carousel-bnr" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img alt="First slide" style="visibility: hidden;" src="images/bg_banner1.jpg" />
-                        <center><img class=" col-xs-8 sliderimg wow zoomIn img-responsive" data-wow-duration="2s" data-wow-delay="0s" src="images/slider1.png" /></center>
-                    </div>
-                    <div class="item">
-                        <img alt="First slide" style="visibility: hidden ;" src="images/bg_banner1.jpg." />
-                        <center><img class=" col-xs-8 sliderimg wow zoomIn img-responsive" data-wow-duration="2s" data-wow-delay="0s" src="images/slider2.png" /></center>
-                    </div>
-                    <div class="item">
-                        <img alt="First slide" style="visibility: hidden;" src="images/bg_banner1.jpg" />
-                        <center><img class=" col-xs-8 sliderimg wow zoomIn img-responsive" data-wow-duration="2s" data-wow-delay="0s" src="images/slider3.png" /></center>
-                    </div>
-                </div>
-            </div>
-        </div> -->
   <?php 
   	include('nav_bar.php'); 
   ?>   
@@ -45,9 +23,8 @@
                 <div class="section-title">
                     <div class="main_h3">ABOUT <span class="color" style="color:#0CF;">US</span></div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Dummy text is also known as 'fill text'. It is said that song composers of the past used dummy texts as lyrics when writing melodies in order to have a 'ready-made' text to sing with the melody. Dummy texts have been in use by typesetters since the 16th century.</p>
+                <p>A restaurant online management system is a collective term for software that helps streamline food business operations. Namely, restaurants, bars, bakeries, cafes, all kinds of menus, food ordering or online businesses.</p>
+                <p>It combines all things that are good about the traditional POS (Point of Sale) systems, with tools that manage your phone calls, take online table reservations,  handle billing, and also help with loyalty programmes and building an online presence. It also works seamlessly with your existing restaurant technology systems (your accounting and employee management software) and uses open APIs that let you integrate with any third party tool.</p>
             </div>
             <div class="col-md-4">
              <div class="chef" style="padding-top:70px;">

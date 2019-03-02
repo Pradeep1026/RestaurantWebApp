@@ -11,13 +11,6 @@
  
  <body>
      <div class="loader"><img src="images/loading.gif" alt="" /></div>
-        <!--
-        <section>
-         <div class="banner">
-         <img class="img-responsive logo1" src="images/logo.png"/>
-		 <img src="images/table_booking.jpg"  class="img-responsive">
-	</div>
-      <!--banner section close-->  
       <?php 
   	   include('nav_bar.php'); 
   	 ?>
@@ -124,6 +117,7 @@
 								<h3>Book Parking slot</h3>
 								 <!--person-->    
                                 <select class="form-control cus_form" name="parkingslot">
+                                    <option value="Slot 1">None</option>
                                     <option value="Slot 1">Slot 1</option>
                                     <option value="Slot 2">Slot 2</option>
                                     <option value="Slot 3">Slot 3</option>

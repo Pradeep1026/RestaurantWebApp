@@ -11,16 +11,9 @@
  
  <body>
      <div class="loader"><img src="images/loading.gif" alt="" /></div>
-        <!--
-        <section>
-         <div class="banner">
-         <img class="img-responsive logo1" src="images/logo.png"/>
-		 <img src="images/spec_banner.jpg"  class="img-responsive">
-	</div>
-      <!--banner section close-->  
-      <?php 
+     <?php 
   	   include('nav_bar.php'); 
-  	 ?>
+  	 ?>     
 </section>
 <div class="clearfix"></div> 
 

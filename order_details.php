@@ -6,7 +6,7 @@ session_start();
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Restaurant Website</title>
+    <title>Restaurant Website Order details</title>
      <?php 
   	   include('css_files.php'); 
   	 ?>  
@@ -21,9 +21,9 @@ include('db.php');
 include('admin_nav_bar.php'); 
 if(isset($_SESSION['a_name'])){ 
 //Edit Query
-if(isset($_GET['item_id'])){
-	$id = $_GET['item_id'];
-	$edit_query = $db->query("select * from main_menu where item_id='$id'") or die(mysqli_error());
+if(isset($_GET['order_id'])){
+	$id = $_GET['order_id'];
+	$edit_query = $db->query("select * from order_menu where order_id='$id'") or die(mysqli_error());
 	$edit_row = mysqli_fetch_assoc($edit_query);
 }
 ?>
@@ -31,7 +31,7 @@ if(isset($_GET['item_id'])){
 <div class="welcome_page">
 	<!-- Start Section 1 -->
  	<div class="container p20_0"> 
-        <div class="main_h3" style="color:#0CF;" align="center">CONTACT DETAILS</div>
+        <div class="main_h3" style="color:#0CF;" align="center">ORDER DETAILS</div>
         <div class="line" align="center"><img class="img-responsive" src="images/undr.png" /></div>           
           
           <div class="col-md-12 col-sm-12 col-xs-12" style="padding-top:65px;">
@@ -41,23 +41,23 @@ if(isset($_GET['item_id'])){
                     <thead>
                         <tr>
                             <th class="text-center">S.No</th>
-                            <th class="text-center">Name</th>
-                            <th class="text-center">Email</th>
-                            <th class="text-center">Mobile</th>
-                            <th class="text-center">Message</th>
+                            <th class="text-center">Order id</th>
+                            <th class="text-center">Customer id</th>
+                            <th class="text-center">Item name</th>
+                            <th class="text-center">Price</th>
                         </tr>
                     </thead>
                     <tbody>
                     	<?php
 							$i = 1;
-							$sql = $db->query("select * from `contact` ORDER BY id DESC") or die(mysqli_error());
+							$sql = $db->query("select * from `order_menu` ORDER BY order_id DESC") or die(mysqli_error());
 							while($row = mysqli_fetch_assoc($sql)){
 								echo '<tr align="center">';
 								echo '<td>'.$i.'</td>';
-								echo '<td>'.$row['name'].'</td>';
-								echo '<td>'.$row['email'].'</td>';
-								echo '<td>'.$row['mobile'].'</td>';
-								echo '<td>'.$row['message'].'</td>';
+								echo '<td>'.$row['order_id'].'</td>';
+								echo '<td>'.$row['cust_id'].'</td>';
+								echo '<td>'.$row['item_name'].'</td>';
+								echo '<td>'.$row['price'].'</td>';
 								echo '</tr>';
 								$i++;
 							}

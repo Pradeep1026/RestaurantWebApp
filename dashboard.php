@@ -14,13 +14,7 @@ session_start();
 
 <body>
 	<div class="loader"><img src="images/loading.gif" alt="" /></div>
-        <!--
-        <section>
-         <div class="banner">
-         <img class="img-responsive logo1" src="images/logo.png"/>
-		 <img src="images/Dashboard.jpg"  class="img-responsive">
-		</div>
-        </section> -->
+
 <?php 
 include('db.php');
 include('admin_nav_bar.php'); 
